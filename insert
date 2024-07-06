@@ -1,0 +1,23 @@
+-- 1. Insert minimal 3 data pengguna dengan peran yang berbeda
+INSERT INTO users (username, password, role) VALUES
+('Azriell', 'oo22', 'Admin'),
+('jeki', ''nadi00", 'User'),
+('yadi', 'skuy77', 'User');
+
+-- 2. Insert minimal 3 data profil pengguna
+INSERT INTO profil (user_id, full_name, birthdate, bio) VALUES
+(1, 'yanti', '2004-07-26', 'gelisah.'),
+(2, 'yanti the avengers', '2007-04-11', 'apa sih kamu'),
+(3, 'dodi', '1999-12-18', ' hm cape');
+
+-- 3. Insert minimal 3 data postingan
+INSERT INTO posts (user_id, title, content) VALUES
+(1, 'kepo deh kamu', 'apalagi ya'),
+(2, 'queen', 'fucek'),
+(3, 'hm dimana tuch ', 'duh cape deh');
+
+-- 4. Insert minimal 3 data komentar
+INSERT INTO comments (post_id, user_id, comment_text) VALUES
+(1, 2, 'nulis apa ya''),
+(2, 1, '"aduh jatuh'),
+(3, 3, 'hari ini mendung'');
